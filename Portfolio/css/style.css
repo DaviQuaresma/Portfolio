@@ -231,6 +231,24 @@ button.copied {
 }
 
 
+/*Media configurada para telas maiores como tablet, que ira sofrer essa alterações:
+
+@media (max-width: 790px) {
+}
+
+//Media configurada para telas maiores como sendo essa um celular G, que ira sofrer 
+essa alterações:
+
+@media (max-width: 425px) {
+}
+
+//Media configurada para sofrer alterações no menor tamanho de tela, sendo esse o 
+celular P, aqui ele vai diminuir sua fonnte estabelecida no CSS para uma menor.
+
+@media (max-width: 320px) {
+}
+*/
+
 
     #372148,
     #694480,
