@@ -1,0 +1,5 @@
+{
+    "redirects": [
+      { "source": "/", "destination": "/Portfolio/dist/index.html", "permanent": true }
+    ]
+  }
