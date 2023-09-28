@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.header{
+    background-color: #372148;
+    height: 100vh;
+    padding-top: 10%;
+    padding-left: 7%;
+}
+
+.title-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com tamanhos iguais */
+    grid-column-gap: 20px; /* Espaçamento entre as colunas */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.gradient{
+    background: linear-gradient(
+    to bottom,
+    #372148,
+    #694480,
+    #ac74b6
+    
+);
+    width: 100%;
+    height: 100px; 
+}
+
+.description{
+    color: #F5F5F5;
+    font-weight: 700;
+    margin-left: 9%;
+    font-size: 20px;
+}
+
+#bigDesc{
+    color: #F5F5F5;
+    font-size: 140px;
+    margin-left: 12%;
+    font-weight: 900;
+    line-height: 0.9; /* Reduz a altura da linha para diminuir o espaçamento */
+}
+
+#smallDesc{
+    color: #F5F5F5;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 34%;
+}
+
+#icons{
+    margin-left: 10%;
+    margin-bottom: 30%;
+}
+
+.icon{
+    margin-left: 10px;
+    height: auto; /* Mantém a proporção original das imagens */
+    max-width: 15%; /* Largura máxima das imagens */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    
+}
+
+/* Efeito de hover */
+.icon:hover {
+    transform: translateY(-7px); /* Move os ícones 5 pixels para cima */
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.jobs-content{
+    background: linear-gradient(
+    to bottom,
+    #ac74b6,
+    #F5F5F5
+);
+}
+
+.jobs-text{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.temp{
+    color: #372148;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 0.9; /* Reduz a altura da linha para diminuir o espaçamento */
+    padding: 30% 30% 30% 30%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+
+.who-is-me {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+  }
+  
+  .personal-description {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos internos quebrem para a próxima linha quando o espaço é limitado */
+  }
+  
+  .personal-text {
+    margin-top: 20%;
+    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+  }
+  
+  .personal-photo {
+    
+    flex-shrink: 0; /* Evita que a imagem encolha quando há pouco espaço */
+    max-width: 50%;
+    height: auto;
+    border-radius: 1%;
+    padding-left: 10%;
+  }
+  
+  
+#photo{
+    -webkit-box-shadow: 10px 11px 0px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 11px 0px -4px rgba(0,0,0,1);
+    box-shadow: 10px 11px 0px -4px rgba(0,0,0,1);
+    box-sizing: border-box;
+    max-width: 80%; /* Define a largura máxima para que a imagem não fique muito grande */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 0%; /* Arredonda as pontas da imagem para torná-la circular */
+}
+
+.icons2{
+    margin-left: 10%;
+    margin-bottom: 30%;
+}
+
+.ics2 {
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.ic2 {
+    margin: 0% 5% 5% 0%;
+    width: 10%; /* Defina o tamanho desejado em pixels */
+    max-width: 100%; /* Certifique-se de que os ícones não ultrapassem o tamanho definido */
+}
+
+.personal-title{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+  
+.email-field{
+    background: linear-gradient(
+        to bottom,
+        #F5F5F5,
+        #ac74b6,
+        #694480
+        
+    );
+    width: 100%;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 0% 0% 3% 0%;
+}
+
+.mailbox {
+    display: inline-block; /* Mantém a imagem e o texto na mesma linha */
+}
+
+.mailbox-img {
+    width: 15%;
+}
+
+.ebox {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#email{
+    font-size: 20px;
+    background-color: transparent; /* Cor inicial do botão */
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.email-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email-info {
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+}
+
+
+button {
+    background-color: #000000; /* Cor inicial do botão */
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave para a cor de fundo e o efeito de escala */
+}
+
+button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% (pode ajustar o valor conforme desejado) ao passar o mouse */
+}
+
+button.copied {
+    background-color:#372148; /* Cor quando o email é copiado */
+}
+
+
+
+    #372148,
+    #694480,
+    #ac74b6,
+    #ffffff,
+    #F5F5F5,
+    #C0C0C0,
+    #DCDCDC,
+    #E5E5E5,
+    #FAFAFA,
