@@ -22,3 +22,10 @@ copyButton.addEventListener('click', () => {
     }, 3000);
 });
 
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+var link = document.createElement('a');
+link.href = 'https://drive.google.com/uc?export=download&id=1HTl0kf75IbkG_ZkAP-mbKO3J9LppHqjY';
+link.download = 'DaviQuaresmaCV.pdf';
+link.click();
+});
